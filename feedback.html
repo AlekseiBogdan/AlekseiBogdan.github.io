@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="style.css">
+  <link rel="shortcut icon" href="images/cdhead.png" type="image/x-icon">
+  <title>Feedback</title>
+</head>
+<body>
+  <div id="home">
+    <p><h1>Обратная связь</h1></p>
+    <nav>
+          <a href="genres.html">Жанры</a>/
+          <a href="albums.html">Альбомы</a>/
+          <a href="bands.html">Исполнители</a>/
+          <a href="listen.html">Послушать</a>
+          <a href="feedback.html">Обратная связь</a>/
+          <a href="index.html">Главная</a>
+    </nav>
+  </div>
+  <div class="list" id="everything">
+    <table>
+      <tr>
+        <td id="bg"><img src="images/aphex.png" alt="Логотип" width=400></td>
+        <td>Содержание
+          <ul>
+            <li><a href="#home">Навигация</a></li>
+            <li><a href="#feedback">Обратная связь</a></li>
+          </ul>
+        </td>
+      </tr>
+    </table>
+  </div>
+  <div id="feedback">
+      <h2>Мы ждём ваших сообщений!</h2>
+      <div id="form">
+        <form action="http://g06u33.nn2000.info/cgi-bin/form_action.py" method="post" target="_blank">
+          <table>
+            <tr>
+              <td>
+                <p>Имя:<br><input type="text" name="first_name" placeholder="Name"></p>
+                <p>Фамилия:<br><input type="text" name="last_name" placeholder="Surname"></p>
+                <p>Возраст:<br><input type="number" name="age" placeholder="Age"></p>
+              </td>
+              <td>
+                <p>Номер телефона:<br><input type="number" name="phone_number" placeholder="Phone number"></p>
+                <p>E-mail:<br><input type="text" name="email" placeholder="E-mail"></p>
+                <p>Дата:<br><input type="date" name="date"></p>
+              </td>
+            </tr>
+            <tr>
+              <td colspan="2">
+                <p>Лучший альбом этого года на ваш взгляд:<br><textarea name="textarea" rows=10></textarea></p>
+                <p>Название файла:
+                  <input id="filename" type="tехt" name="000_file_name" value="09bogdan.txt"></p>
+                <p>Тип записи в файл:
+                  <select name="010_mode">
+                    <option value="a">a - дозаписать в файл</option>
+                    <option value="w">w - очистить файл и записать в файл</option>
+                  </select>
+                  <input type="hidden" name="function" value="page">
+                  <input type="hidden" name="page_id" value="3"></p>
+                <p><input type="reset" name="reset" value="Обновить">
+                  <input type="submit" name="submit" value="Отправить"></p>
+                </p><a id="results" href="http://g06u33.nn2000.info/tmp/09bogdan.txt" target="_blank">Результаты</a></p>
+              </td>
+            </tr>
+          </table>
+        </form>
+      </div>
+    </div>
+
+</body>
+</html>
